@@ -1,0 +1,99 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* Nav Bar Styles*/
+.navigationBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.wrappedlinks{
+    display: flex;
+}
+
+.wrappedlinks > div{
+    margin-right: 20px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.navLinks{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navLinks a{
+    color: darkgoldenrod;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navLinks:hover{
+    border-bottom: 1px solid black;
+}
+
+.navLinks a:hover{
+    color: black;
+}
+
+/* main page style*/
+.portfolioItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.potfolioSingleItem{
+    position: relative;
+}
+
+.portfolioImgBackground{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid black;
+
+}
+
+.imgText{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 50%;
+    padding-right: 100%;
+}
+
+.logo img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.imgText .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+/**/
+.imgText:hover .subtitle{
+    font-weight: 600;
+    color: darkgoldenrod;
+
+}
+
+.imgDarken{
+    transition: 1s;
+    filter: brightness(10%);
+}
