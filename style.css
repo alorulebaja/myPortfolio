@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    font-family: Georgia;
 }
 
 .container{
@@ -96,4 +97,21 @@ body{
 .imgDarken{
     transition: 1s;
     filter: brightness(10%);
+}
+/* About Me page*/
+
+.summaryContainer{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+    
+}
+
+#meetlateef{
+    max-width: 400px;
 }
